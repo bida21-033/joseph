@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: goldenrod;
+  color: royalblue;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: royalblue;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: palevioletred;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: rgb(85, 85, 85);
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+</style>
+</head>
+<body>
+
+
+    <div class="about-section">
+        <h1>About Us Page</h1>
+        <p>The Granada Theatre's motivation is to give its patrons the best theater experience
+             possible. The Granada has developed programs over the years to make movies come to life,
+              making it a location where movies come to life. The Granada Theatre reinvents the experience 
+              by fusing the desire to make movies come to life with modern theater amenities that genuinely
+               awaken the senses and improve the movie-going experience it offers</p>
+      </div>
+      
+      <h2 style="text-align:center">Our Team</h2>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img class="movie-list-img" src="img/colton.jpg" alt="Colton" style="width:100% ;">
+            <div class="container">
+              <h2>Colton Collins</h2>
+              <p class="title">CEO & Founder</p>
+              <p>Some text that describes me the granada theatre.</p>
+              <p>colton@thegranada.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img class="movie-list-img" src="img/emily.jpg" alt="Emilly" style="width:100% ;">
+            <div class="container">
+              <h2>Emmily Joseph</h2>
+              <p class="title">Floor staff</p>
+              <p>Some text that describes me the granada theatre.</p>
+              <p>emilly@thegranada.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img class="movie-list-img" src="img/steffy.jpg" alt="Steffy" style="width:100% ;">
+            <div class="container">
+              <h2>Steffy Logan</h2>
+              <p class="title">Crew member</p>
+              <p>Some text that describes me the granada theatre.</p>
+              <p>steffy@thegranada.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    
+</body>
+</html>

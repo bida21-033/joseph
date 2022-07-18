@@ -1,0 +1,265 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horror</title>
+<style>
+
+
+body{
+    background-color: blueviolet;
+    max-width: 100%;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+td{
+    float: left;
+}
+
+td a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14 16px;
+    text-decoration: none;
+}
+
+td a:hover:not(.active){
+background-color: #111;
+}
+
+.active{
+    background-color: #A9CCE3;
+}
+
+.movie-list-item :hover.movie-list-item-tittle
+.movie-list-item :hover.movie-list-item-decs
+.movie-list-item :hover
+.movie-list-item-button
+{
+    opacity: 1;
+}
+
+.movie-list-item-img{
+    transition: all 1s ease-in-out;
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.movie-list-item-tittle{
+    background-color: #A9CCE3;
+    padding: 0 10px;
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+
+.movie-list-item-desc{
+    background-color: whitesmoke;
+    padding: 10px;
+    font-size: 14px;
+    position: absolute;
+    top: 30%;
+    left: 50px;
+    width: 230px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+}
+
+.container-active{
+    background-color: white;
+}
+
+.movie-list-item.active{
+    color: rgb(165, 28, 28);
+}
+
+.navbar-container.active{
+    background-color: rgb(27, 184, 34);
+    color: rgb(219, 195, 195);
+}
+
+.toggle.active{
+    background-color: #A9CCE3;
+}
+
+.toggle-ball.active{
+    background-color: white;
+    transform: translateX(-20px);
+}
+
+
+img {
+    border-radius: 15px;
+   
+}
+
+.action-movies{
+
+    position: absolute;
+
+    width:100%;
+
+    height: 100%;
+
+   background-color: black;
+
+    padding: 0px 10px;
+
+    color: white;
+
+    margin-top: 500px;
+
+}
+
+.horror-movies h1{
+
+    font-size: 15px;
+
+    color:rgb(18, 241, 241);
+
+}
+
+.horror-container{
+
+    margin-top: 15px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.horror- inside h3{
+
+    font-size: 15px;
+
+    font-weight:200;
+
+    margin-top: 6px;
+
+   
+
+}
+
+.horror-inside img{
+
+   height: 250px;
+
+   border-radius: 10px;
+
+   transition: all 500ms ease-in-out;
+
+}
+
+.horror-inside img:hover{
+
+    transform: scale(1.1);
+
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo"> THE GRANADA THEATRE</h1>
+                <div class="menu-container">
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="menu-container">
+        <hr>
+        <nav>
+            <table cellspacing="5" cellpadding="5">
+  <td><a href="HOME.html">Home</a></td>       
+<td><a href="CATEGORY.html">Category</a></td>
+<td><a href="BOOKING.html">Booking</a></td>
+<td><a href="UP COMING MOVIES.html">Up coming</a></td>
+<td><a href="FEEDBACK.html">Feedback</a></td>
+<td><a href="CONTACT.html">Contact us</a></td>
+                </table>
+            </nav>
+            <hr>
+        </div>
+
+<div class="movie-list-container">
+<h1 class="movie-list-title">HORROR</h1>
+<div class="movie-list-wraper">
+    <div class="movie-list">
+
+      <div class="movie-list-item">
+            <img class="movie-list-img" src="img/malignant.jpg" alt="">
+            <p class="movie-list-item-title-desc">Paralyzed by fear from shocking visions, a woman's torment worsens
+                 as she discovers her waking dreams are terrifying realities.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="movie-list-item">
+            <img class="movie-list-img" src="img/the unholy.jpg" alt="">
+            <p class="movie-list-item-title-desc">A girl inexplicably gains the power to heal the sick after a
+                 supposed visitation from the Virgin Mary. As word spreads and people flock to witness her miracles,
+                  a disgraced journalist visits the small New England town to investigate. However, when strange events
+                   start to occur, he soon wonders if these phenomena are the result of something more sinister.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="movie-list-item">
+            <img class="movie-list-img" src="img/the witch.jpg" alt="">
+            <p class="movie-list-item-title-desc">In 1630 New England, panic and despair envelops a farmer, his
+                 wife and their children when youngest son Samuel suddenly vanishes. The family blames Thomasin, 
+                 the oldest daughter who was watching the boy at the time of his disappearance. With suspicion and 
+                 paranoia mounting, twin siblings Mercy and Jonas suspect Thomasin of witchcraft, testing the clan's
+                  faith, loyalty and love to one another.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="movie-list-item">
+            <img class="movie-list-img" src="img/street fear.jpg" alt="">
+            <p class="movie-list-item-title-desc">After a series of brutal slayings, a teen and her friends take on
+                 an evil force that's plagued their notorious town for centuries.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+</body>
+
+</html>
